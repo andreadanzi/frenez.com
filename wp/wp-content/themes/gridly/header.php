@@ -51,12 +51,19 @@
                        <img src="<?php echo get_template_directory_uri(); ?>/images/light/logo.png" alt="<?php bloginfo('sitename'); ?>">
                  <?php } ?>
             </a>
-            
+            <?php if ( has_nav_menu( 'header_nav' ) ) { ?>
+                <div id="vert_nav">
+                    <?php wp_nav_menu( array( 'theme_location' => 'header_nav', 'container_class' => 'vert_nav_menu' ) );  ?>
+                </div>
+             <?php } ?>
        </div>
         
                 
        <?php if ( has_nav_menu( 'main_nav' ) ) { ?>
-  		 <div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?></div>
+  		 <div id="nav">
+         <?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
+         <?php if ( has_nav_menu( 'right_nav' ) ) wp_nav_menu( array( 'theme_location' => 'right_nav', 'container_class' => 'right_nav_menu' ) );  ?>
+         </div>
        <?php } else { ?>
  	 	 <div id="nav"><ul><?php wp_list_pages("depth=1&title_li=");  ?></ul></div>
 	   <?php } ?>

@@ -7,7 +7,11 @@
 
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		 <?php if ( has_post_thumbnail() ) { ?>
-         <div class="gridly-image"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'summary-image' );  ?></a></div>
+         <div class="gridly-image"><a href="<?php the_permalink() ?>">
+            <div class="gridly-overlay-image"/><?php the_post_thumbnail( 'summary-image' );  ?></div>
+            </a>
+            
+         </div>
           <div class="gridly-category"><p><?php the_category(', ') ?></p></div>
        
 		  <?php } ?>

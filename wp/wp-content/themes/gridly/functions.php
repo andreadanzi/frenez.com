@@ -41,11 +41,19 @@
 	
 	
     // menu 
+    
 	add_action( 'init', 'register_gridly_menu' );
-
+    // danzi.tn@20141106 aggiunti due nuovi menu
 	function register_gridly_menu() {
-		register_nav_menu( 'main_nav', __( 'Main Menu' ) );
+		register_nav_menus( 
+        array(
+        'main_nav' =>  __( 'Main Menu' ) ,
+        'right_nav' =>  __( 'Right Nav Menu' ) ,
+        'header_nav' =>  __( 'Header Menu' )
+        )
+        );
 	} 
+    // danzi.tn@20141106e
 
      //setup footer widget area
 	if (function_exists('register_sidebar')) {
