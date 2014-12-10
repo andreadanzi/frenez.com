@@ -7,7 +7,8 @@
 	<title><?php bloginfo('sitename'); ?> <?php wp_title(); ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    
+    <link rel="shortcut icon" href="/theincline.it/wp-content/uploads/2014/11/incline_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/theincline.it/wp-content/uploads/2014/11/incline_favicon.ico" type="image/x-icon">
     <!-- styles -->
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />

@@ -12,7 +12,7 @@ background: url("../images/light/bg-cur-menu.png") repeat-x scroll left bottom r
     position:relative;
     float:right;
     right: 20px;
-    top: 31px;
+    top: 65px;
 }
 
 #vert_nav li {
@@ -119,7 +119,7 @@ background: url("../images/light/bg-cur-menu.png") repeat-x scroll left bottom r
   .size-full 				{ width:100%; height:inherit;}
  
 /* post index styles */ 
-  #post-area .post 				{ width:310px; background:#FFF; border-right:0px solid #dbdbdb; border-bottom:0px solid #dbdbdb; margin-right:10px; margin-top:15px; position:relative;  }
+  #post-area .post 				{ width:310px; background:#FFF; border-right:0px solid #dbdbdb; border-bottom:1px solid #000; margin-right:10px; margin-top:15px; position:relative;  }
   #post-area .post .gridly-copy 		{ width:250px; margin-left:auto; margin-right:auto; padding-top:10px; paddingbottom:20px; overflow:hidden; clear:both;}
   #post-area .post .gridly-date 		{ width:150px;  color:#8e8e8e; font-size:11px;  border-bottom:1px dotted #cccccc; padding-bottom:0; padding-top:0; }
   #post-area .post .gridly-link 		{ width:150px; border-top:1px dotted #e8e8e8; color:#494e51;}
