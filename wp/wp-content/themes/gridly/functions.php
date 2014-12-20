@@ -71,7 +71,7 @@
 
 	// hide blank excerpts 
 	function custom_excerpt_length( $length ) {
-	return 30;
+	return 25;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	
